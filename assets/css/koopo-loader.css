@@ -1,0 +1,16 @@
+#page-loader-init {
+    position:absolute;
+    min-height:100%;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:center; 
+    z-index:9999999;
+    }
+    .spinner {
+        height:1px;
+    }
+    .logo {
+        width:100%;
+        text-align:center;
+    }

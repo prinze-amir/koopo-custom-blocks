@@ -1,0 +1,645 @@
+/*dokan*/
+.tj_panel .NoticeBar {
+    display: none;
+}
+.__talkjs_launcher {
+    background-color: #ffcc01;
+}
+.Message.tj_message--by-me {
+    background-color:#ffcc01;
+}
+    
+/*FIX PRODUCT ADMIN FOR product packs label price*/
+._regular_price_field  {
+    clear:both;
+}
+
+/*woocommerce*/
+
+.up-sells {
+    clear:both;
+}
+/*fix styling for audio playlist*/
+.woocommerce-product-details__short-description .the-artist {
+    display:none !important;
+}
+.woocommerce-product-details__short-description .active-from-gallery {
+    color: #ffba12;
+}
+.woocommerce-product-details__short-description .audioplayer.skin-wave .player-but .the-icon-bg {
+    background-color: #000;
+}
+/*fix gallery image zoom feature*/
+.woocommerce-product-gallery__image img {
+transition: none !important;
+-webkit-transition: none !important;
+}
+.woocommerce-importer-done:before {
+    color: #ffcc01!important;
+} 
+.woocommerce-message::before,.woocommerce-info::before {
+    color: #23a455;
+}
+
+.wcmenucart-contents i.fa.fa-shopping-cart, .wcmenucart-contents .count {
+    color:#ffcc01;
+}
+.wcmenucart-contents i.fa.fa-shopping-cart:hover, .wcmenucart-contents .count:hover {
+    color:#000;
+}
+.variations select {
+    padding: 5px;
+    border-radius: 15px;
+}
+.woocommerce-message {
+    border-top-color: #19ce59;
+}
+    
+button.dokan-live-chat.dokan-live-chat-messenger.button.alt {
+    display: inline-block;
+    float: none !important;
+}
+.summary.entry-summary {
+    box-shadow:0px 0px 30px 0px rgba(0,0,0,0.12);
+    padding:5%;
+    display:inline-block;
+    float:none !important;
+    max-width:575px;
+    border-radius:15px;
+
+}
+.summary.entry-summary .single_add_to_cart_button{
+    float:none !important;
+} 
+
+.summary.entry-summary p, .summary.entry-summary h2, .summary.entry-summary form.cart{
+    text-align:center;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper {
+    box-shadow:0px 0px 30px 0px rgba(0,0,0,0.12);
+    padding:5%;
+    border-radius:15px;
+}
+.woocommerce-product-gallery {
+    margin-right:2%;
+}
+
+nav.woocommerce-breadcrumb{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+/*jobs*/
+.job-manager-form {
+    border: none !important;
+}
+.widget_recent_jobs .job_listings .location:before {
+    position: relative;
+    margin-right: 15px;
+}
+.widget ul.job_listings li.job_listing a:before{
+display:none;
+}									
+form.job-manager-form.wp-job-manager-bookmarks-form {
+    margin: 0;
+    padding: 0 30px;
+}
+.single_job_listing .job-listing-meta.meta.company {
+    border: 0;
+    box-shadow: 4px 5px 7px 0px #b9bec4;
+    padding: 20px;
+    border-radius: 5px;
+}
+/*li#jmfe-wrap-salary:before {
+    content:'$';
+}*/
+ul.job_listings li.job_listing.job_position_featured a {
+    background: #9f874b1c;
+    border-bottom: solid #ffffff 4px;
+
+}
+a.bookmark-notice {
+    float: right;
+    color: #ffba12;
+    font-weight: 700;
+    border: solid 1px #ffba12;
+}
+textarea#bookmark_notes {
+    margin-top: 25px !important;
+    max-width: 100%;
+}
+ul.job_listings li.job_listing a div.location {
+    width: auto;
+}
+ul.job_listings li.job_listing.job_position_featured a:hover {
+    background: #ede0b314;
+    border-bottom: solid #ffffff 4px;
+}
+.job_listing li.date {
+color: #333;
+}
+ul.job_listings li.job_listing a div.location {
+    padding-left: 25px;
+    position: relative;
+    color: #000;
+}
+.job_description ul {
+    padding: 0 25px;
+}
+ul.job_listings li.job_listing a div.position .company {
+color: #333;
+}
+ul.job_listings li.job_listing a div.position .company strong {
+    color: #ffba12;
+}
+ul.job_listings li.job_listing a div.position h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+ul.job_listings li.job_listing.job_position_featured a:focus {
+        background-color: #f4f2eb;
+}
+span.job-manager-applications-applied-notice {
+    font-weight: 600;
+    font-style: italic;
+    background: #ffba12;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #ffff;
+}
+    
+.single_job_listing .meta .full-time {
+    background-color: #67dd67;
+}
+                                
+/*jobs related*/
+.single_job_listing {
+    padding:45px 25px;
+    background:#fff;
+    box-shadow: 0px 0px 58px -13px rgba(0,0,0,0.5);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    border-radius: 10px 10px 10px 10px;
+    margin:10px;
+
+}
+.single_job_listing .meta li {
+    margin: 5px 0;
+    padding: 1em;
+    float: left;
+    line-height: 1em;
+    color: #999;
+}
+.single_job_listing .job-manager-applications-applied-notice { 
+    border: 1px solid #ffba12;
+    font-weight: 600;
+}
+.job_listing_packages {
+    border: none;
+}
+.job_listing_packages_title {
+    padding:20px;
+    background:#fff;
+}
+p.job_tags {
+    text-transform: capitalize;
+}
+form#job_package_selection, form#wpjmcl_submit_claim {
+    padding: 45px 25px;
+    background: #fff;
+    box-shadow: 0 0 58px -13px rgba(0,0,0,.5);
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    border-radius: 10px 10px 10px 10px;
+}
+.job-package .woocommerce-Price-amount.amount {
+    font-weight: 600;
+}
+ul.job_listings li.job_listing a ul.meta {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: auto;
+    display: inline-grid;
+    clear: none;
+}
+.jw-location, .jw-salary {
+    text-align:center;
+}
+
+.job_filters .search_jobs .filter_by_tag a {
+    text-transform: capitalize;
+    font-size: 14px !important;
+}
+    
+.jw-type li {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    margin: 0 5px 5px 0;
+    box-shadow: 2px 2px 4px 1px #eee;
+}
+.jw-type li:nth-child(1) {
+    background: #ffba12;
+}
+.jw-type li:nth-child(2) {
+    background: green;
+}
+
+.jw-type li:nth-child(3) {
+    background: purple;
+}
+.jw-type li:nth-child(4) {
+    background: blue;
+}
+.jw-type ul {
+    margin-bottom: 0;
+}
+.job_description strong {
+    color: #ffba12;
+}
+.relatedjobs {
+    background: #fff;
+}
+.relatedjobs .jt span {
+    background: #000;
+}
+.relatedjobs .loc, .relatedjobs .title a {
+    color: #000;
+}
+.relatedjobs hr {
+    background-color: #ffba12;
+}
+.job-manager-application-wrapper .application .application_details, .single_job_listing .application .application_details {
+    display:none;
+}
+@media(max-width:475px){
+    
+    .job_filters .search_jobs:after {
+        content: "More";
+    }
+    .filter_wide.filter_by_tag {
+        height: 100px;
+        overflow: hidden;
+    }
+    
+    
+}
+@media only screen and (max-width: 725px) {
+    .job-manager-form fieldset label, .job-manager-form fieldset div.field {
+       width: 100%;
+    }
+}
+@media (min-width: 972px) {
+    .job_description p {
+        padding: 0 25px;
+    }	
+}
+
+
+
+/*events*/
+span.evo_above_title {
+    position: static !important;
+}
+span.evcal_evdata_icons * {
+    opacity: 1 !important;
+    color: #000 !important;
+    font-size: 20px !important;
+}
+.evo_clik_row:hover {
+    background-color: #fafafa !important;
+}
+.media-toolbar {
+    height: auto !important;
+	}
+.evo_lightbox_content {
+    max-width: 675px;
+}									
+.evose_repeat_header span.title {
+    background-color: #fceb94;
+}									
+	select#media-attachment-date-filters {
+    height: auto;
+	}
+	.evoau_dpicker {
+		text-transform: capitalize !important;
+	}	  
+	span.ev_more_text {
+		text-transform: capitalize;
+		font-weight: 600;
+	}		   
+	.eventon_list_event .event_description p, .evcal_list_a .event_description li, .evo_pop_body .evcal_evdata_row .evcal_evdata_cell p {
+		font-size: 18px !important;
+	}
+		   .eventon_details_shading_bot p span {
+    display: inline-block;
+}
+	.evcal_desc .evcal_desc3 em {
+		font-size: 14px !important;
+	}
+	.ajde_yn_btn {
+		background: #39a73e;
+	}
+	.evcal_desc .evcal_desc3 em i {
+		color:#3db83d !important;
+		font-weight: 700 !important;
+	}
+	input#media-search-input {
+    height: auto !important;
+    line-height: 2.1;
+    margin: 32px 0 0;
+	}
+		   p.checkbox_row {
+    width: fit-content;
+}
+	input.ant-input.ant-input-sm {
+    height: auto !important;
+    line-height: 2.1 !important;
+    font-size: 13px !important;
+    margin: auto !important;
+	}	
+	.evoep_images img {
+    width: 155px;
+    height: auto;
+	}		   
+	.eventon_list_event {
+		border: solid #fff;
+	}
+	.remove_event_add_img {
+    z-index: 99;
+    color: red;
+	}
+		.evo_lightbox {
+			z-index:999;
+		}
+	 span.evoau_img_btn {
+		background: #000 !important;
+		color: #fff;
+		padding: 10px !important;
+	}
+.evo_event_images span {
+    display: inline-flex !important;
+    cursor: pointer !important;
+}		   
+	.evcal_cblock em.day, .evcal_cblock em.month, .evcal_cblock em.year {
+		font-size: 16px !important;
+	}
+	.evcal_cblock em.date {
+		font-size:30px !important;
+	}
+	.eventon_events_list .eventon_list_event .evcal_desc .evcal_time, .evo_pop_body .evcal_desc .evcal_time {
+    	padding-left: 25px !important;
+	}
+	.evcal_cblock .evo_end {
+        padding-left: 18px !important;
+		margin-top: 0px !important;
+	}
+	.evcal_cblock .evo_end:before {
+		width:10px !important;
+	}
+	span.evcal_desc_info {
+		font-size: 16px !important;
+	}
+	.ajde_evcal_calendar.boxy .eventon_list_event.hasbgimg::after {
+		background-color:#000 !important;
+	}
+
+	.evo_lightbox_body span.evcal_desc.evo_info {
+		display: inline-block !important;
+		top: 0 !important;
+		vertical-align: top !important;
+		padding: 5px 15px 0 25px !important;
+	}
+
+	.evoTX_wc_section .evotx_quantity .qty b.plu, .evotx_qty_adjuster b.plu {
+		background-color: #ffbc12;
+	}
+
+	.evo_lightbox_body span.evcal_cblock,.eventon_events_list .evcal_cblock,
+	.eventon_events_list .eventon_list_event .hasFtIMG .evcal_cblock {
+		position: relative !important;
+		display: inline-block !important;
+		vertical-align:top;
+	}
+	.eventon_events_list .eventon_list_event .hasFtIMG .evcal_cblock, .evo_pop_body .hasFtIMG .evcal_cblock {
+		left: 0px !important;
+	}
+	.eventon_events_list .eventon_list_event .evcal_desc {
+		padding: 3px 15px 0 20px !important;
+		display: inline-grid !important;
+		vertical-align: top;
+	}
+	@media(min-width:875px){
+		.eventon_events_list .eventon_list_event .hasFtIMG .evcal_desc {
+			position:absolute !important;
+		}		
+	}
+		@media(max-width:475px){
+			.evo_lightbox_content {
+				width: 90%;
+				max-width:350px;
+			}
+		}
+	.ajde_evcal_calendar.boxy.boxstyle1 .eventon_list_event .evo_above_title {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.ajde_evcal_calendar.boxy.boxstyle1 .eventon_events_list .eventon_list_event .evcal_desc {
+		position: absolute;
+		top: 275px;
+	}									
+	.eventon_events_list .eventon_list_event .ev_ftImg {
+		width: 150px !important;
+		height: 150px !important;
+		max-height: 100% !important;
+		position: relative !important;
+		display: inline-block !important;
+		border-radius: 5px !important;
+	}
+	.ajde_evcal_calendar.boxy.boxstyle1 .evcal_list_a {
+		padding-top: 280px !important;
+	}
+	.ajde_evcal_calendar.boxy.boxstyle1 .evo_boxtop {
+		height: 265px !important;
+	}
+	.evoau_submission_form .checkbox_field input, .checkbox_row input {
+    width: 20px;
+	}	
+	.evoau_submission_form p label {
+    text-transform: capitalize !important;
+	}
+	.evo_tx_image_src img {
+   	 	max-width: 250px;
+	}
+		   
+	.ajde_yn_btn:hover {
+		background-color: #808080 !important;
+	}
+	span.evcal_desc2.evcal_event_title, span.evcal_desc3, span.evcal_desc_info {
+		max-width: 480px;
+	}
+	.evo_above_title span {
+		margin-right: 8px;
+	}
+		.evo_cal_above span {
+			opacity:1;
+		}
+	a.evovo_options_item.ajde_popup_trig.button_evo {
+		box-shadow: 1px 1px 1px 1px;
+		padding: 5px 10px;
+		border-radius: 12px;
+		cursor: pointer;
+	}
+
+/*theme***/
+
+.betterdocs-widget-container {
+    left:20px;
+    right:auto !important;
+}
+a#lasso--post-format {
+background: #ffba12;
+}
+.ism_template_4 {
+white-space: nowrap;
+}
+.ism_template_4:hover {
+white-space: normal;
+}
+/*formidable custom style*/	
+img.fpost-img {
+width: 275px;
+max-width:100%;
+}
+#links-mobile {
+display:none;
+}
+#td-img {
+    width:350px;
+}
+.fpost-title {
+    max-width: 600px;
+    margin-top: 0;
+    line-height: 1.2;
+}
+.influencer-posts {
+padding:15px 10px;
+}
+.influencer-posts table {
+margin:0;
+}
+.influencer-posts td a {
+margin-right: 8px;
+font-size: 18px;
+}
+#links i {
+font-size: 25px;
+margin-bottom: 15px;
+}
+#links-mobile i {
+font-size: 25px;
+margin-right: 10px;
+}
+.fpost-content {
+max-width: 775px;
+color: #1e1e1e;
+line-height: 1.5;
+}
+.influencer-posts td {
+vertical-align: top;
+}
+td#links {
+text-align: right;
+padding-right: 30PX;
+}
+.influencer-posts:nth-child(even) {background: #f8f8f8}
+.influencer-posts:nth-child(odd) {background: #fff}
+
+@media(max-width:775px){
+
+    .influencer-posts td {
+            width:100%;
+            display:block;
+    }
+    #td-img {
+        width:100%;
+        max-width:350px;
+        margin:auto;
+    }
+    #links{
+        display:none;
+    }
+    #links-mobile{
+        display:flex;
+        justify-content:center;
+    }
+    .influencer-posts table {
+        table-layout: fixed;
+        width: 100%;
+    }
+    .betterdocs-launcher, .betterdocs-widget-container {
+        display:none !important;
+    }
+
+}
+
+/*affiliate*/
+.popup_content input, .popup_content textarea {
+    border-radius: 6px;
+    border:solid 1px #ddd;
+    padding-left:8px;
+}
+.popup_wrapp .the_popup .popup_top, .popup_wrapp .the_popup .popup_content .the_button {
+    background:#000;
+    border:none;
+}
+
+/*bettr docs*/
+
+.betterdocs-footer-wrapper .betterdocs-footer-emo > div:hover .betterdocs-emo {
+fill: #3bc923;
+}
+.betterdocs-widget-container .betterdocs-launcher {
+background-color: #000 !important;
+}
+/*hubspot live chat*/
+#hubspot-messages-iframe-container {
+    z-index:99 !important;
+}
+/*hide searches in search popup*/
+#searches,#psearch,#lsearch,#csearch,#bsearch,#jsearch,#pcats {
+    display:none;
+}
+
+/*facetwp*/
+.biz-facets div {
+    display: inline-block;
+    margin: 10px;
+	}
+	select.facetwp-dropdown {
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+ .loading-loader {
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.77);
+    z-index: 90;
+    }
+.facet-loader {
+    position: absolute;
+    width: 100%;
+    left: 40%;
+	top: 15%;
+    height: 170px;
+    background: #ffffff00;
+    }
+    img.loader-img {
+    height: auto;
+    width: 180px;
+    }

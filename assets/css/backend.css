@@ -1,0 +1,5 @@
+/*for formidable entries thumbnail size*/
+img.attachment-thumbnail.size-thumbnail {
+    width: 100% !important;
+    height: auto !important;
+}
