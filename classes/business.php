@@ -63,7 +63,7 @@ class KoopoBusiness{
 			} else {
 			echo '<h2>'. $type .'</h2>';
 			}?>
-			<div class="image col-xs-12"><a href="<?php echo wp_get_attachment_url($image_id); ?>"><?php echo $image;?></a></div>
+			<div class="image col-xs-12"><a class="sin-photo" href="<?php echo wp_get_attachment_url($image_id); ?>"><?php echo $image;?></a></div>
 			<div class="content col-xs-12">
 				<div class="head fix">
 					<div class="text">
