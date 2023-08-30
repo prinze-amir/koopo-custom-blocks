@@ -11,7 +11,7 @@ add_shortcode('paid-in-my-city', 'get_biz_paid_badge');
 add_shortcode('biz-location-link', 'get_biz_location_link'); 
 add_shortcode('koopo-cats', 'koopo_tax_widget' );
 add_shortcode('parent-location', 'get_location_parents');
-add_shortcode('places', 'create_location_list');
+//add_shortcode('places', 'create_location_list');
 add_shortcode('kpost-content', 'content_shortcode');
 add_shortcode('mobile-footer-menu', 'add_mobile_footer');
 add_shortcode('biz-directions', 'get_biz_directions');
@@ -25,10 +25,130 @@ add_shortcode( 'banner-upload', 'banner_button' );
 add_shortcode( 'profile-upload', 'profile_button' );
 add_shortcode( 'social-artist-links', 'social_artist_links' );
 add_shortcode('music-meta', 'get_music_meta');
+add_shortcode( 'account-menu', 'add_account_menu');
+add_shortcode( 'buddy-header', 'get_buddy_boss_head');
+add_shortcode( 'buddy-post', 'get_buddy_posts');
 add_shortcode( 'wyz-paginate', function(){
-    return wyz_pagination(); 
+    return  function_exists( 'wyz_pagination' ) ? wyz_pagination():'<div style="display:flex">'.posts_nav_link( '', 'Previous', 'More' ).'</div>'; 
 });
 
+function get_buddy_boss_head(){
+    ob_start();
+    ?>
+
+    <!doctype html>
+    <html <?php language_attributes(); ?>>
+        <head>
+            <meta charset="<?php bloginfo( 'charset' ); ?>">
+            <link rel="profile" href="http://gmpg.org/xfn/11">
+            <?php wp_head(); ?>
+        </head>
+
+        <body <?php body_class(); ?>>
+
+        <?php wp_body_open();
+
+         if (!is_singular('llms_my_certificate')):
+            
+                do_action( THEME_HOOK_PREFIX . 'before_page' ); 
+        
+        endif; 
+            ?>
+
+            <?php do_action( THEME_HOOK_PREFIX . 'before_header' ); ?>
+
+            <header id="masthead" class="<?php echo apply_filters( 'buddyboss_site_header_class', 'site-header site-header--bb' ); ?>">
+                    <?php do_action( THEME_HOOK_PREFIX . 'header' ); ?>
+            </header>
+
+            <?php do_action( THEME_HOOK_PREFIX . 'after_header' );
+
+            do_action( THEME_HOOK_PREFIX . 'before_content' ); ?>
+
+            <div id="content" class="content-full">
+
+            <?php 
+            
+            do_action( THEME_HOOK_PREFIX . 'begin_content' ); 
+
+        $header = ob_get_clean();
+
+        return $header;
+}
+
+function get_buddy_posts(){
+    ob_start();
+
+    ?>
+    <div class="post-grid bb-grid">
+
+        <?php
+        /* Start the Loop */
+        while ( have_posts() ) :
+            the_post();
+
+            /*
+                * Include the Post-Format-specific template for the content.
+                * If you want to override this in a child theme, then include a file
+                * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                */
+            get_template_part( 'template-parts/content', apply_filters( 'bb_blog_content', get_post_format() ) );
+
+        endwhile;
+        ?>
+    </div>
+	<?php
+    buddyboss_pagination();
+    $posts = ob_get_clean();
+    return $posts;            
+}
+
+function add_account_menu(){
+
+    $log_ttl = esc_html__( 'Sign in', 'koopo-online' );
+	$logout_ttl = esc_html__( 'Logout', 'koopo-online' );
+	$reg_ttl = esc_html__( 'Sign up', 'koopo-online' );
+	$reg_ttl = apply_filters( 'wyz_register_btn_txt', $reg_ttl );
+	$log_ttl = apply_filters( 'wyz_login_btn_txt', $log_ttl );
+	$logout_ttl = apply_filters( 'wyz_logout_btn_txt', $logout_ttl );
+
+    $redirect = is_home() ? false : get_permalink();
+    $loggedIn = is_user_logged_in();
+    if ( $loggedIn ) {
+        $macc_title =  esc_html__( 'my account', 'koopo-online' );
+        $cur_mnu_itm = ( is_page( 'user-account' ) ? ' current-menu-item' : '' );
+        if ( function_exists( 'wyz_get_option' ) ) {
+            $macc_select = wyz_get_option( 'login-btn-content-type' );
+            $current_user = get_userdata(get_current_user_id());
+            switch ( $macc_select ) {
+                case 'firstname':
+                    $macc_title = $current_user->first_name;
+                    break;
+                case 'lastname':
+                    $macc_title = $current_user->last_name;
+                    break;
+                case 'username':
+                    $macc_title = $current_user->user_login;
+                    break;
+                case 'custom-text':
+                    $macc_title = esc_html( wyz_get_option( 'login-btn-custom-text' ) );
+                    break;
+            }
+        }
+
+        $macc_title = apply_filters( 'wyz_my_account_btn_title', $macc_title );
+        
+        $link = '<a href="' . esc_url( home_url( '/user-account/' ) ) . '" id="my-account-btn" class="wyz-button wyz-primary-color icon" title="' . esc_attr__( 'My Account', 'koopo-online' ) . '">' . $macc_title . '<i class="fa fa-angle-right"></i></a>';
+        $link .= WyzHelpers::get_myaccount_btn_dropdown();
+        $link .= '<a href="' . wp_logout_url( home_url() ) . '" class="wyz-button" title="' . $logout_ttl . '">' . $logout_ttl . '</a>';
+    } else {
+        $link = '<a href="' . WyzHelpers::wyz_get_signup_url( false ) . '" class="wyz-button blue icon wyz-primary-color" title="' . $reg_ttl . '">' . $reg_ttl . '<i class="fa fa-angle-right"></i></a>';
+        $link .= '<a href="' . WyzHelpers::wyz_get_signup_url( true ) . '" class="wyz-button" title="' . $log_ttl . '">' . $log_ttl . '</a>';
+    }
+    $items = $link;
+	$items = apply_filters( 'wyz_login_menu_items', $items );
+    return $items;
+}
 function get_music_meta( $atts ){
     global $post;
     $file = get_post_meta($post->ID, 'dzsap_meta_playerid', true);
@@ -280,7 +400,7 @@ ob_start();?>
             }
             .mobile-footer {
                 background: #fff;
-                z-index: 999;
+                z-index: 1;
                 position: fixed;
                 bottom: 0;
                 padding:6px 10px 0;
@@ -316,14 +436,13 @@ ob_start();?>
 			</style>
 			<div  class="mobile-footer">
 				<ul class="footer-mobile-menu">
-					<li class="foot-item"><a class="mobile-foot-link" href="<?php echo home_url()?>"><i class="fas fa-home"></i>Home</a></li>
-					<li class="foot-item"><a id="mobile-new-post" class="mobile-foot-link addNewBtn" href="#"><i class="fas fa-plus"></i>Post</a></li>
-					<li class="foot-item"><a class="mobile-foot-link" href="<?php echo home_url('/user-account/')?>"><i class="fas fa-user"></i>Account</a></li>
-					<li class="foot-item"><a class="mobile-foot-link" href="<?php echo home_url('/shop/')?>"><i class="fas fa-shopping-cart"></i>Shop</a></li>
+                <li class="foot-item"><a class="mobile-foot-link" href="<?php echo home_url('/user-account/')?>"><i class="fas fa-user"></i>Account</a></li>
+                <li class="foot-item"><a id="mobile-new-post" class="mobile-foot-link addNewBtn" href="#"><i class="fas fa-plus"></i>Post</a></li>
+                <li class="foot-item"><a class="mobile-foot-link searchBtn" href="#"><i class="fas fa-search-plus"></i>Search</a></li>
+                <li class="foot-item"><a class="mobile-foot-link" href="<?php echo home_url('/shop/')?>"><i class="fas fa-shopping-cart"></i>Shop</a></li>
 					<li class="foot-item"><a class="mobile-foot-link" href="<?php echo home_url('/business/')?>"><i class="fas fa-map-marked"></i>Biz</a></li>
 					<li class="foot-item"><a class="mobile-foot-link" href="<?php echo home_url('/events/')?>"><i class="far fa-calendar-alt"></i>Events</a></li>
                     <li class="foot-item"><a class="mobile-foot-link" href="<?php echo home_url('/kvidz/')?>"><i class="fa fa-video-camera"></i>Video</a></li>
-					<li class="foot-item"><a class="mobile-foot-link searchBtn" href="#"><i class="fas fa-search-plus"></i>Search</a></li>
 					<li class="foot-item"><a class="mobile-foot-link" href="<?php echo home_url('/influencers-square/')?>"><i class="far fa-square"></i>Square</a></li>
 					<li class="foot-item"><a class="mobile-foot-link" href="https://docs.koopoonline.com"><i class="far fa-question-circle"></i>Help</a></li>
 				</ul>
