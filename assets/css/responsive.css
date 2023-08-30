@@ -1,0 +1,990 @@
+/*-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+  1. larger than 992px
+  2. Normal Desktop ( between 992px and 1169px )
+  3. Small Desktop and Below ( less than 992px )
+  4. Tablet Desktop ( between 768px and 991px )
+  5. Large Mobile ( less than 768px )
+  6. Small Mobile ( less than 480px )
+
+
+-----------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1199px) {
+  .listing-no-sidebar, .bus-post-grid {
+    width: 32.7%;
+  }
+  .listing-with-sidebar .bus-post-grid, .bus-post-grid {
+    width: 48%;
+  }
+  /*.location-search .input-location {
+    width: 278px;
+  }*/
+  /*#header-image-content .bus-filter {
+    margin-right: 10px;
+    width: 198px;
+  }*/
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .sin-busi-post .footer .post-comment a {
+    padding: 0 7px;
+  }
+  .sin-busi-post .post-like button {
+    margin-right: 3px;
+  }
+  .sin-busi-post .post-like button,
+  .sin-busi-post .footer .post-comment a,
+  .sin-busi-post .busi-post-share-btn {
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+
+  .location-search {
+    padding-bottom: 34px;
+  }
+  .post-footer-comment-form .wyz-input {
+    width: 74%;
+  }
+}
+
+/**
+ * 1. larger than 1169px
+ */
+ @media only screen and (min-width: 992px) {
+  .input-group-addon.beautiful .fa.fa-square-o {
+    margin-left: -85px;
+  }
+  .job_filters .job_types li:first-child {
+      padding-left: 0;
+  }
+  .job_filters .job_types li:last-child {
+    padding-right: 0;
+  }
+}
+
+/**
+ * 2. Normal Desktop ( between 992px and 1169px )
+ */
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  .main-menu nav > ul > li + li {
+    margin-left: 20px;
+  }
+  .header-link {
+    margin-left: 20px;
+  }
+  .map-unlock {
+    bottom: 178px;
+  }
+  
+  .tab-pane .sin-busi-post .footer .date {
+    display: block;
+    float: left;
+    margin-top: 5px;
+  }
+}
+
+/**
+ * 3. Small Desktop and Below ( less than 992px )
+ */
+@media only screen and (max-width: 991px) {
+  .sin-offer-item .image img {
+    width: 100%;
+  }
+  nav.navbar.bootsnav .navbar-header {
+    float: left;
+  }
+  .header-logo a {
+    float: left;
+  }
+  .acgbtb .header-logo {
+    float: none;
+  }
+  .acgbtb .header-logo {
+    border-right: 0;
+  }
+  .acgbtb {
+    border-top: 2px solid #f1f1f1;
+  }
+  .header-links {
+    border-left: 0;
+  }
+  .attr-nav {
+    padding: 0 10px;
+  }
+  .business-data-wrapper .business-social {
+    position: static;
+    margin-top: 30px;
+    float: right;
+  }
+  .social {
+    margin: 10px 0 0 -10px;
+  }
+  .bus-post-grid .content .read-more {
+    margin-top: 15px;
+  }
+  .business-data-area {
+    padding: 40px 0 75px;
+  }
+  .business-data-area .bus-fav-cont {
+    bottom: initial;
+    top: 20px;
+  }
+  .job_filters .job_types li {
+   padding: 1em 2em; 
+   border: 1px solid #e2ebf1; 
+   display: inline-block; 
+   float: none; 
+   margin: 5px 0;
+   padding: 10px 16px; 
+  }
+  .job_filters .job_types li:last-child {
+    border-right: 1px solid #e2ebf1;
+  }
+  .clami_img {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/**
+ * 4. Tablet Desktop ( between 768px and 991px )
+ */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-top {
+    text-align: center;
+  }
+  .header-top-left {
+    text-align: left;
+  }
+  .header-top-left p, .header-search, .header-social {
+    display: inline-block;
+    float: none;
+  }
+  .header-search {
+    float: right;
+  }
+  .header-right {
+    border-top: 1px solid #374553;
+    height: 49px;
+  }
+  .map-unlock {
+    bottom: 178px;
+  }
+  .location-search .input-location {
+    width: 203px;
+    margin-right: 15px;
+  }
+  .location-search.filter-count-4 .input-location,
+  .location-search.filter-count-4 #loc-radius-cont,
+  .location-search.filter-count-4 .loc-radius-cont {
+    margin-bottom: 21px;
+    width: 31%;
+  }
+  .location-search.filter-count-4 .input-location.last {
+    margin-bottom: 0;
+  }
+  .location-search.filter-count-4 .input-submit {
+    vertical-align: top;
+  }
+  .location-search.filter-count-3 .input-location {
+    width: 28%;
+    margin-right: 6px;
+  }
+  .location-search.filter-count-2 .input-location {
+    width: 39%;
+  }
+  .location-search.filter-count-1 .input-location {
+    width: 80%;
+  }
+  .map-container .location-search.filter-count-4 .input-submit {
+    width: 65%;
+  }
+  .location-search .input-submit {
+    width: 80px;
+  }
+  .sin-offer-item .content {
+    margin-top: 30px;
+  }
+  .sin-footer:nth-child(2n+1) {
+    clear: both;
+  }
+  .footer-about, .footer-contact {
+    margin-bottom: 50px;
+  }
+  .business-sidebar {
+    margin-bottom: 60px;
+    padding: 0;
+  }
+  .sin-busi-sidebar {
+    float: left;
+    padding: 0 15px;
+    width: 50%;
+  }
+  .sin-busi-sidebar:nth-child(2n+1) {
+    clear: both;
+  }
+  .business-post-area {
+    margin-bottom: 60px;
+  }
+  .sidebar-container {
+    padding: 0;
+  }
+  .search-sidebar {
+    padding: 0 15px;
+  }
+  .sin-sidebar {
+    float: left;
+    margin-bottom: 75px;
+    padding: 0 15px;
+    width: 50%;
+  }
+  .sin-sidebar:nth-child(2n) {
+    clear: both;
+  }
+  .our-offer {
+    margin-bottom: 60px;
+  }
+  .comment-form-area {
+    margin-bottom: 50px;
+  }
+  .listing-no-sidebar .bus-post-grid, .listing-with-sidebar .bus-post-grid, .bus-post-grid {
+    width: 48%;
+  }
+  .post-footer-comment-form .wyz-input {
+    width: 85%;
+  }
+}
+
+/**
+ *  Greater than 768px
+ */
+@media only screen and (min-width: 768px) {
+  #subscription .pmpro_level {
+      max-width: 50%;
+      min-width: 40%;
+  }
+  .main-menu #mobile-right-link,
+  .main-menu #mobile-account-link,
+  .main-menu #mobile-login-link, 
+  .main-menu #mobile-logout-link, 
+  .main-menu #mobile-register-link,
+  .main-menu .wcmenucart {
+    display: none;
+  }
+  .header-2-logo {
+    margin-bottom: 17px;
+  }
+
+  .wyz-menu-sidebar {display: none;}
+
+  .alignfull {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: auto;
+    max-width: 1000%;
+  }
+
+  .alignwide {
+    margin-left: calc(25% - 25vw);
+    margin-right: calc(25% - 25vw);
+    width: auto;
+    max-width: 1000%;
+  }
+
+  .alignwide img,
+  .alignfull img {
+    display: block;
+    margin: 0 auto;
+  }
+  .sin-offer-item.wyz_offers .head.fix{
+    padding-top: 20px;
+  }
+  .our-offer-area-sml .sin-offer-item>.image {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sin-offer-item.wyz_offers .image .offer-label {
+    left: 15px;
+    top: 0;
+  }
+
+}
+
+/**
+ * 5. Large Mobile ( less than 768px )
+ */
+@media only screen and (max-width: 767px) {
+
+  /*.sin-busi-post .busi-post-share-btn {
+    margin-top: 6px;
+  }*/
+  .sin-busi-post .footer .post-comment a,
+  .sin-busi-post .footer .post-like button,
+  .sin-busi-post .busi-post-share-btn {
+    font-size: 10px;
+  }
+  .sin-busi-post .footer .post-like,
+  .sin-busi-post .footer .post-comment,
+  .sin-busi-post .busi-post-share-btn {
+    display: inline-block;
+    float: none;
+  }
+  .sin-busi-post .footer .date {
+    display: inline-block;
+    float: right;
+  }
+  .sin-busi-post .busi-post-share-btn {
+    vertical-align: top;
+  }
+  .header-acgbtb .header-logo {
+    text-align: center;
+    width: initial;
+    width: 100%;
+  }
+  .acgbtb-content {
+    text-align: center;
+  }
+  .header-acgbtb .header-logo img {
+    max-height: 200px;
+  }
+  .header-acgbtb .acgbtb-content {
+    padding: 40px 20px;
+  }
+  .container{
+    width: 450px;
+  }
+  .header {
+    position: static;
+  }
+  .header-top {
+    text-align: center;
+  }
+  .header-top-left p, .header-search, .header-social {
+    display: inline-block;
+    float: none !important;
+  }
+  .header-top-left>p {
+    height: 45px;
+  }
+  .header-search {
+    margin-bottom: 12px;
+    margin-left: 0;
+    margin-top: -2px;
+  }
+  .header-right {
+    border-top: 1px solid #374553;
+    height: 49px;
+  }
+  .header-logo a img {
+    width: 140px;
+  }
+  .acgbtb .header-logo {
+    padding: 30px 15px;
+    text-align: left;
+  }
+  .acgbtb .header-logo a {
+    float: none;
+  }
+  .acgbtb .header-logo a img {
+    width: initial;
+  }
+  .header-logo h3 {
+    margin-top: 0;
+  }
+  .header-link a {
+    font-size: 10px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+  }
+  .header-link a i {
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+  }
+  .header-bottom.header-bottom-acgbtb {
+    padding: 0;
+  }
+  .header-acgbtb {
+    border:0;
+  }
+  .header-bottom.header-bottom-acgbtb .col-xs-12 {
+    min-height: 0;
+  }
+  #wyz-mobile-menu-trigger {
+    display: initial;
+  }
+  #page-header-image .container-2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  #profile-logo-cont {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: calc(100% - 100px);
+  }
+  .blurred {
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-filter: blur(8px);
+      -moz-filter: blur(8px);
+      -o-filter: blur(8px);
+      -ms-filter: blur(8px);
+      filter: blur(8px);
+  }
+  .acgbtb-m a.meanmenu-reveal {
+    right: 0 !important;
+    left: initial !important;
+    top: -75px !important;
+  }
+  .page-title-social .page-title {
+    width: 370px;
+  }
+  .body-util-marg {
+    margin-top: 0;
+  }
+  .search-wrapper>.close-button::after{
+    transform: rotate(-135deg);
+  }
+  .search-wrapper>.close-button::before{
+    transform: rotate(-45deg);
+  }
+  .search-wrapper>.close-button {
+    opacity: 1;
+  }
+  .home-map-container {
+    padding-bottom: 170px;
+  }
+  .the-post-search .blog-img-search {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .the-post-search .content p {
+    display: block;
+    text-align: justify;
+    width: 100%;
+  }
+  .location-search .input-location {
+    margin-right: 0;
+  }
+  .location-search.filter-count-4 .input-location,
+  .location-search.filter-count-3 .input-location,
+  .location-search.filter-count-2 .input-location,
+  .location-search.filter-count-1 .input-location,
+  .location-search.filter-count-4 #loc-radius-cont,
+  .location-search.filter-count-4 .loc-radius-cont {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .location-search .input-submit,
+  .header-image-filters .location-search .input-submit {
+    width: 100%;
+  }
+  .input-box {
+    margin-bottom: 8px;
+  }
+  .location-search {
+    padding: 21px 20px 20px 20px;
+    margin: 0 20px;
+  }
+  .map-shortcode .location-search {
+    margin: 0;
+  }
+  .recently-added-area .section-title h1,
+  .featured .section-title h1 {
+    max-width: 280px;
+  }
+  .section-title-search .wyz-search-form {
+    clear: both;
+    margin-top: 10px;
+  }
+  .home-map-container .map-unlock, .home-map-container .map-lock {
+    bottom: 295px;
+  }
+  .wyz-search-form input {
+    margin-right: 15px;
+    width: 190px;
+  }
+  .sin-offer-item .content {
+    margin-top: 30px;
+  }
+  .sin-offer-item .content .head .logo {
+    margin-bottom: 15px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .sin-offer-item.wyz_offers .head.fix{
+    width: 100%;
+    padding-top: 20px;
+  }
+  .our-offer-area-sml .sin-offer-item>.image {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sin-offer-item.wyz_offers .image .offer-label {
+    left: 0;
+    top: 0;
+  }
+
+  .wyz_offers.type-wyz_offers.sin-offer-item .view-offer {margin-top: 20px;}
+
+  .sin-offer-item .content .head .logo img {
+    width: auto;
+  }
+  .business-tab-list ul li span {
+    display: none;
+  }
+  .comment-list .comment {
+    padding-left: 20px;
+    padding-top: 85px;
+  }
+  .sin-footer {
+    margin-bottom: 50px;
+  }
+  .sin-footer:last-child {
+    margin-bottom: 0;
+  }
+  .footer-menu ul li {
+    margin: 0 10px;
+  }
+  .business-data-wrapper .content {
+    width: 100%;
+    margin-top: 30px;
+    float: left;
+  }
+  .business-tab-list ul li a {
+    padding: 0 20px 0 30px;
+  }
+  .business-sidebar {
+    margin-bottom: 60px;
+  }
+  .business-post-area {
+    margin-bottom: 60px;
+  }
+  .job_summary_shortcode img {
+    height: auto;
+    float: none;
+    max-height: initial;
+    margin-right: 0;
+    max-width: initial;
+  }
+  .post-footer-comment-form .wyz-input {
+    width: 72%;
+  }
+  .busi-photos-wrapper .sin-photo:nth-child(4) {
+    margin-top: 25px;
+  }
+  .input-three .input-box, .input-two .input-box {
+    width: 100%;
+  }
+  .input-box textarea {
+    height: 190px;
+  }
+  .our-offer {
+    margin-bottom: 60px;
+  }
+  .login-form .wyz-button {
+    margin-bottom: 15px;
+  }
+  .login-form .wyz-button:last-child {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .input-box label.opacity {
+    display: none;
+  }
+  .sin-pub-offer .title {
+    width: 335px;
+  }
+  .business-details-form .about-business textarea {
+    height: 220px;
+  }
+  .business-details-form .category-select select {
+    width: 100%;
+  }
+  .open-close-days .close-days {
+    margin-left: 0;
+  }
+  .open-close-days .close-days .cmb-th {
+    display: block;
+  }
+  .open-close-days .open-days {
+    margin-left: 0;
+  }
+  .cmb2-id-wyz-business-close {
+    text-align: right;
+  }
+  .open-close-days .cmb-repeat-group-wrap {
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+  
+  .open-close-days .open_close_status {
+    display: block;
+    position: initial;
+  }
+  
+  .open-close-days .open_all_day-info, .open-close-days .closed_all_day-info {
+    position: relative;
+  }
+  .open-close-days .cmb-group-description {
+    position: initial;
+    float: none;
+  }
+  .open-close-days .cmb-remove-field-row button.cmb-remove-group-row {
+    margin-top: 10px !important;
+  }
+  .open-close-days .cmb-row .cmb-add-row button.cmb-add-group-row {
+    margin-top: -139px;
+    position: initial;
+  }
+  .side-filter-cont {
+    width: 40px !important;
+  }
+  .side-filter-cont .selectator_element.single {
+    border: none;
+    height: 0 !important;
+  }
+  .side-filter-cont .selectator_element:after {
+    content: none;
+  }
+  .side-filter-cont .selectator_input {
+    width: 220px !important;
+  }
+  .side-filter-cont .single.selectator_element .selectator_input {
+    left: 0;
+    right: 0;
+  }
+  .side-filter-cont .selectator_element .selectator_options {
+    left: 0;
+    right: 0;
+    width: 220px !important;
+  }
+  .filter-mobile-trigger {
+    display: inline-block;
+  }
+  .listing-no-sidebar .bus-post-grid, .listing-with-sidebar .bus-post-grid {
+    width: 100%;
+  }
+  .bus-post-grid .head {
+    height: auto;
+  }
+  .bus-post-grid .content {
+    height: auto;
+    padding-top: 30px;
+  }
+  .bus-post-grid .content .read-more {
+    margin-top: 15px;
+  }
+  .bus-post-grid .footer {
+    height: auto;
+  }
+  /*#header-image-content .bus-filter {
+    margin-bottom: 5px;
+    margin-right: 0;
+    width: 100%;
+  }
+  #header-image-content .header-image-filters {
+    height: initial;
+  }
+  .header-image-filters .location-search .input-submit input {
+    text-align: center;
+  }*/
+  #header-image-content .btn-square {
+    width: 100%;
+  }
+  
+  .profile-tab-list {
+    display: none;
+  }
+  .profile-tab-list-dropdown {
+    display: block;
+  }
+  #subscription .pmpro_level{
+    width: 100%;
+  }
+  .job_filters .search_jobs div.filter_first,
+  .job_filters .search_jobs div.search_keywords,
+  .resume_filters .search_resumes div.search_keywords,
+  .job_filters .search_jobs div.filter_last,
+  .resume_filters .search_resumes div.search_location,
+  .job_filters .search_jobs div.search_location {
+    margin-bottom: 12px;
+    padding: 0 !important;
+    width: 100%;
+  }
+  ul.job_listings li.job_listing a img.company_logo {
+    visibility: visible;
+    width: 100px;
+    height: auto;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  ul.job_listings li.job_listing a div.position {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    float: none;
+    text-align: center;
+    clear:both;
+  }
+  ul.job_listings li.job_listing a ul.meta {
+    float: left;
+    text-align: left;
+  }
+  ul.job_listings li.job_listing a div.location {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  /*a.meanmenu-reveal {
+    left: 30% !important;
+  }*/
+  .locals .bus-post-grid {
+    width:48%;
+  }
+  .header-bottom-wrap .header-link {
+    margin-left: 70px;
+  }
+}
+/**
+ * 6. Small Mobile ( less than 480px )
+ */
+@media only screen and (max-width: 479px) {
+  .wyz_business-template-default.single-wyz_business .container{
+    width: 100%;
+  }
+  .container{
+    width: 300px;
+  }
+  .header-social a {
+    width: 38px;
+  }
+  .header-logo {
+    float: none !important;
+    text-align: center;
+  }
+  .header-logo a img {
+    width: auto;
+  }
+  .header-link {
+    float: left;
+    margin-left: 0; margin-top: 20px;
+  }
+  .header-top>.container{ width: 100%; }
+  .header-top .header-right { height: auto; }
+  .page-title-social .page-title {
+    width: 220px;
+  }
+  a.meanmenu-reveal {
+    right: auto !important;
+    left: 0 !important;
+    top: -50px;
+  }
+  .login-menu > ul > li:last-child {
+    margin-left: 0;
+  }
+  .map-container .location-search {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .location-search h2 {
+    line-height: 18px;
+  }
+  .location-search .input-submit {
+    display: block;
+    width: 100%;
+  }
+  #pts-info-cont {
+    clear: both;
+  }
+  .wyz-search-form {
+    float: left;
+  }
+  .wyz-search-form input {
+    width: 180px;
+  }
+  .wyz-search-form form input {
+    margin-right: 14px;
+    width: 215px;
+  }
+  #pts-info-cont {
+    margin-top: -45px;
+  }
+  #youhave {
+    display: none;
+  }
+  .business-tab-list {
+    left: 0; 
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  .recently-added-area .section-title,
+  .featured-area .section-title {
+    margin-bottom: 100px !important;
+  }
+  .recently-added-area .section-title h1,
+  .featured-area .section-title h1 {
+    max-width: 100%;
+  }
+  .category-search-area .wyz-search-form.float-right{display:none;}
+/*  .sin-busi-post .footer .post-comment span {
+    display: none;
+  }*/
+  .sin-busi-post .footer .bubble {
+    margin: 0;
+    margin-top: 8px;
+    border: 0;
+    padding: 0;
+  }
+  .sin-busi-post .footer .post-comment span span,
+  .sin-busi-post .footer .bubble:before,
+  .sin-busi-post .footer .bubble:after {
+    display: none;
+  }
+  .sin-busi-post .footer .post-like,
+  .sin-busi-post .footer .post-comment a,
+  .sin-busi-post .footer .post-comment,
+  .sin-busi-post .footer .post-like button {
+    margin-right: 5px;
+  }
+
+  .sin-busi-post .footer .post-comment a,
+  .sin-busi-post .footer .post-like button,
+  .sin-busi-post .busi-post-share-btn {
+    padding: 0 5px;
+  }
+  .sin-busi-post .footer .post-comment a,
+  .sin-busi-post .footer .post-like button,
+  .sin-busi-post .busi-post-share-btn {
+    font-size: 9px;
+  }
+  .sin-busi-post .footer .post-comment a.no-comments {
+    margin-bottom: 5px;
+  }
+  .sin-busi-post .business-post-share-cont {
+    margin-top: 30px;
+    padding: 0 0 10px 0;
+  }
+  .sin-busi-post .post-share {
+    margin-top: 10px;
+  }
+  .search-sidebar form {
+    width: 100%;
+  }
+  .busi-photos-wrapper .sin-photo:nth-child(3), .busi-photos-wrapper .sin-photo:nth-child(4) {
+    margin-top: 25px;
+  }
+  .sin-comment .content {
+    float: left;
+    margin-top: 10px;
+    padding-right: 0;
+    width: 100%;
+  }
+  .page-map-right-content .map-company-info {
+    padding: 30px;
+  }
+  .page-map-right-content .map-company-info .company-logo {
+    margin-bottom: 15px;
+    margin-right: 0;
+    width: auto;
+    float: none;
+  }
+  .page-map-right-content .map-company-info .content h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .page-map-right-content .map-info-links li {
+    width: 50%;
+  }
+  .page-map-right-content .map-info-links li:nth-child(1), .page-map-right-content .map-info-links li:nth-child(2) {
+    border-bottom: 1px solid #f6f6f6;
+  }
+  .page-map-right-content .map-info-links li a {
+    padding: 25px 10px;
+  }
+  .page-map-right-content .map-info-gallery {
+    padding: 15px 10px;
+  }
+  .page-map-right-content .map-info-links .three-way-width {
+    width: 50%;
+  }
+  .page-map-right-content .map-info-links .three-way-width:nth-child(3) {
+    width: 100%;
+  }
+  .login-form .wyz-button.social-login {
+    margin-left: 0;
+  }
+  .business-buttons .busi-btn {
+    clear: both;
+    margin-bottom: 10px;
+  }
+  .sin-pub-offer .title {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .business-details-form .open-close-time .head p {
+    width: 50%;
+  }
+  .business-details-form .open-close-time .head p:first-child {
+    display: none;
+  }
+  .business-details-form .open-close-time .head p:last-child {
+    margin-left: 0;
+  }
+  .business-details-form .open-close-time .days h4 {
+    width: 100%;
+  }
+  .business-details-form .open-close-time .days input {
+    width: 120px;
+  }
+  .business-details-form .open-close-time .days input:last-child {
+    margin-left: 30px;
+  }
+  .post-footer-comment-form .wyz-input {
+    width: 100%;
+  }
+  .post-footer-comment-form .post_footer_comment_btn {
+    float: none;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .page-404 h1 {
+    font-size: 120px;
+  }
+  .cmb2-id-wyz-business-open,
+  .cmb2-id-wyz-business-close {
+    margin-bottom: 0 !important;
+  }
+  .open-close-title.title-sub {
+    margin-top: 0 !important;
+  }
+  .location-search-slider .owl-item img {
+    height: 100%;
+    margin-top: 0 !important;
+    width:inherit;
+  }
+  .cmb2-wrap .cmb-row.cmb-repeat .cmb2-metabox-description:after {
+    border-bottom: 1px solid #e9e9e9;
+    content: '';
+    clear: both;
+    display: block;
+    padding-top: .4em;
+  }
+ 
+}

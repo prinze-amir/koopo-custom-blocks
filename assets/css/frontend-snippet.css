@@ -14,6 +14,10 @@
     clear:both;
 }
 
+/*facebook icon on blog share tool*/
+.jssocials-share-logo.fa-facebook:before {
+    content: '\e83f' !important;
+}
 /*woocommerce*/
 
 .up-sells {
@@ -81,10 +85,8 @@ button.dokan-live-chat.dokan-live-chat-messenger.button.alt {
     padding:5%;
     border-radius:15px;
 }
-.woocommerce-product-gallery {
-    margin-right:2%;
-}
 
+/*
 nav.woocommerce-breadcrumb{
     display: flex;
     flex-wrap: wrap;
@@ -92,10 +94,17 @@ nav.woocommerce-breadcrumb{
     width: 100%;
     padding: 20px;
     margin: auto;
-}
+}*/
 /*jobs*/
+ul.job_listings li.job_listing a {
+    height: 100px;
+}
+
 .job-manager-form {
     border: none !important;
+}
+a.load_more_jobs strong {
+    padding: 10px;
 }
 .widget_recent_jobs .job_listings .location:before {
     position: relative;
@@ -104,14 +113,18 @@ nav.woocommerce-breadcrumb{
 .widget ul.job_listings li.job_listing a:before{
 display:none;
 }									
-form.job-manager-form.wp-job-manager-bookmarks-form {
+.wp-job-manager-bookmarks-form {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline-block;
+}
+.single_job_listing .job-meta-header h2 {
     margin: 0;
-    padding: 0 30px;
 }
 .single_job_listing .job-listing-meta.meta.company {
     border: 0;
     box-shadow: 4px 5px 7px 0px #b9bec4;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
 }
 /*li#jmfe-wrap-salary:before {
@@ -123,10 +136,11 @@ ul.job_listings li.job_listing.job_position_featured a {
 
 }
 a.bookmark-notice {
-    float: right;
     color: #ffba12;
     font-weight: 700;
     border: solid 1px #ffba12;
+    padding: 5px !important;
+    border-radius: 5px;
 }
 textarea#bookmark_notes {
     margin-top: 25px !important;
@@ -178,21 +192,10 @@ span.job-manager-applications-applied-notice {
 }
                                 
 /*jobs related*/
-.single_job_listing {
-    padding:45px 25px;
-    background:#fff;
-    box-shadow: 0px 0px 58px -13px rgba(0,0,0,0.5);
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    border-radius: 10px 10px 10px 10px;
-    margin:10px;
 
-}
 .single_job_listing .meta li {
-    margin: 5px 0;
-    padding: 1em;
-    float: left;
     line-height: 1em;
-    color: #999;
+    color: #000 !important;
 }
 .single_job_listing .job-manager-applications-applied-notice { 
     border: 1px solid #ffba12;
@@ -320,7 +323,9 @@ span.evcal_evdata_icons * {
     max-width: 675px;
 }									
 .evose_repeat_header span.title {
-    background-color: #fceb94;
+    background-color: #000;
+    color:#fff;
+    font-size:16px;
 }									
 	select#media-attachment-date-filters {
     height: auto;
@@ -505,6 +510,10 @@ span.evcal_evdata_icons * {
 a#lasso--post-format {
 background: #ffba12;
 }
+.lasso--toolbar_wrap {
+    left: 40% !important;
+    max-width:65%;
+}
 .ism_template_4 {
 white-space: nowrap;
 }
@@ -512,6 +521,9 @@ white-space: nowrap;
 white-space: normal;
 }
 /*formidable custom style*/	
+.frm_form_fields .dz-preview .dz-details {
+    display: block !important;
+}
 img.fpost-img {
 width: 275px;
 max-width:100%;
@@ -643,3 +655,92 @@ background-color: #000 !important;
     height: auto;
     width: 180px;
     }
+
+    /**
+ * 11.2. Preloader
+ */
+.spinner {
+    margin: 100px auto 0;
+    width: 150px;
+    text-align: center;
+  }
+  .spinner > div {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    background-color: #ffcc01;
+  
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }
+
+  
+.loading-spinner {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+  }
+  
+  .loading-spinner .dot1, .loading-spinner .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    border-radius: 100%;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .loading-spinner .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
